@@ -36,17 +36,25 @@ class Fractals:
                "angle": 90,
                "length": 6
                }
-    Unnamed_Fractal = {"axiom": "FF",
-                       "rules": {"F": "+F+F--F+F"},
-                       "iterations": 5,  # TOP: 15
+    Unnamed_Fractal = {"axiom": "X",
+                       "rules": {"X": "FF", "F": "+F+F--F+F"},
+                       "iterations": 3,  # TOP: 15
                        "angle": 45,
-                       "length": 3
+                       "length": 8
                        }
-    Unnamed_Fractal_Second = {"axiom": "FF",
-                              "rules": {"F": "+F+F--F+F+F+F--F+F", "X": "+F+F--F+F"},
-                              "iterations": 5,  # 5 - почка
-                              "angle": 45,
-                              "length": 8}
+
+    Giga_Cross = {"axiom": "++FX++F",
+                  "rules": {"X": "+F--F+F+F+F--F", "F": "F+F"},
+                  "iterations": 2,  # TOP: 15
+                  "angle": 45,
+                  "length": 8
+                  }
+
+    Bud = {"axiom": "FF",
+           "rules": {"F": "+F+F--F+F+F+F--F+F", "X": "+F+F--F+F"},
+           "iterations": 4,  # TOP: 4 - почка
+           "angle": 45,
+           "length": 8}
 
     Second_Unnamed_Fractal = {"axiom": "FF",
                               "rules": {"F": "+F+F--F+FX", "X": "--"},
