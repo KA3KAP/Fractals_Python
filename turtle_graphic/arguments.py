@@ -36,18 +36,18 @@ class Fractals:
                "angle": 90,
                "length": 6
                }
-    Unnamed_Fractal = {"axiom": "X",
+    ChainCross = {"axiom": "X",
                        "rules": {"X": "FF", "F": "+F+F--F+F"},
-                       "iterations": 3,  # TOP: 15
+                       "iterations": 2,  # TOP: 15
                        "angle": 45,
-                       "length": 8
+                       "length": 5
                        }
 
-    Giga_Cross = {"axiom": "++FX++F",
-                  "rules": {"X": "+F--F+F+F+F--F", "F": "F+F"},
-                  "iterations": 2,  # TOP: 15
+    Wheel = {"axiom": "FF",
+                  "rules": {"X": "+X", "F": "XXFXF--FXF"},
+                  "iterations": 4,  # TOP: 15
                   "angle": 45,
-                  "length": 8
+                  "length": 10
                   }
 
     Bud = {"axiom": "FF",
